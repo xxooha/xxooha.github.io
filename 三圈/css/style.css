@@ -1,0 +1,103 @@
+/**{margin:0;padding:0;}*/
+
+body {
+	background-color: #000;
+}
+
+.ronqi {
+	width: 100px;
+	height: 60px;
+	margin: 100px auto;
+	position: relative;
+}
+
+.xiaoronqi {
+	animation: spin 0.3s linear infinite ;
+	width: 100px;
+	height: 50px;
+	overflow: hidden;
+	position: absolute;
+	left: 0;
+	top: 0;
+	transform-origin: 50% 300%;
+	
+}
+
+.tiao {
+	border: 4px solid transparent;
+	/*border-radius: 50%;*/
+	/*box-sizing: border-box;*/
+	width: 100px;
+	height: 100px;
+	left: 0;
+	margin: 0 auto;
+	position: absolute;
+	right: 0;
+	top: 0;
+	
+}
+/*animation-delay 属性定义动画何时开始。值以秒或毫秒计。*/
+.xiaoronqi:nth-child(1) {
+	animation-delay: -50ms;
+}
+
+.xiaoronqi:nth-child(2) {
+	animation-delay: -150ms;
+}
+
+.xiaoronqi:nth-child(3) {
+	animation-delay: -250ms;
+}
+
+.xiaoronqi:nth-child(4) {
+	animation-delay: -300ms;
+}
+
+.xiaoronqi:nth-child(5) {
+	animation-delay: -450ms;
+}
+
+.xiaoronqi:nth-child(1) .tiao {
+	border-color: red;
+	height: 90px;
+	width: 90px;
+	top: 7px;
+}
+
+.xiaoronqi:nth-child(2) .tiao {
+	border-color: yellow;
+	height: 76px;
+	width: 76px;
+	top: 14px;
+}
+
+.xiaoronqi:nth-child(3) .tiao {
+	border-color: blue;
+	height: 62px;
+	width: 62px;
+	top: 21px;
+}
+
+.xiaoronqi:nth-child(4) .tiao {
+	border-color: green;
+	height: 48px;
+	width: 48px;
+	top: 28px;
+}
+
+.xiaoronqi:nth-child(5) .tiao {
+	border-color: palegreen;
+	height: 34px;
+	width: 34px;
+	top: 35px;
+}
+
+@keyframes spin {
+	0%,
+	15% {
+		transform: rotate(0);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
